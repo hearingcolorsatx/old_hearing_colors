@@ -1,11 +1,10 @@
 # hearingcolors
 
-This is the official repository for Hearing Colors in Austintonio, TX (http://www.hearingcolors.com).
+This is the official repository for Hearing Colors LLC in Austintonio, TX (https://hearingcolors.com).
 
-index.html is the first rendition of what will become the Hearing Colors website.
+https:hearingcolorsatx.github.io is an active project for Tim Delaney and a sister site for https://hearingcolors.com.
 
-We are a record label with interests in music and techology.
-
-We are interested in eventually synthesizing synesthesia utilizing Artificial Intelligence and machine learning.
+Hearing Colors is a record label with interests in music and techology, specifically synthesizing synesthesia utilizing
+Artificial Intelligence and machine learning. However, this is an eventuality.
 
 More to come soon.
