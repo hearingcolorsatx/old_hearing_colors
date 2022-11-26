@@ -100,10 +100,12 @@ input, select, textarea {
 
 	body {
 		background-color: #000000;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg");
-		background-size: cover;
+		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg"); */
+		background-image: url("../../images/Hearing Colors.jpg");
+		background-size: contain;
+		background-position: bottom, center;
 		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-repeat: no-repeat;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3073,7 +3075,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(0, 0, 0, 0.90);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3099,6 +3101,10 @@ input, select, textarea {
 			#header h1 a {
 				border: 0;
 			}
+				#header h1 a img {
+					height: 4.5em;
+					position: center;
+				}
 
 		#header nav {
 			font-family: Raleway, Helvetica, sans-serif;
@@ -3111,6 +3117,7 @@ input, select, textarea {
 			right: 0.7em;
 			text-transform: uppercase;
 			top: 0.7em;
+			transition: all 0.35s ease;
 		}
 
 			#header nav a {
@@ -3255,7 +3262,7 @@ input, select, textarea {
 		-ms-user-select: none;
 		user-select: none;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-		background: rgba(46, 49, 65, 0.8);
+		background: rgba(0, 0, 0, 0.8);
 		cursor: default;
 		height: 100%;
 		left: 0;
@@ -3278,7 +3285,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: #000000;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3375,7 +3382,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 50% 0 4.75em 0 ;
 	}
 
 		#banner .inner {
@@ -3461,13 +3468,14 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg");
-				background-size: auto,
- cover;
-				background-position: center,
- center;
+				/* padding: 7em 0 8.25em 0 ; */
+				background-color: #000000;
+/*				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg");*/
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,13 +3582,14 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg");
-			background-size: auto,
- cover;
-			background-position: center,
- 0% 30%;
-			margin-bottom: -6.5em;
+			background-color: #000000;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg"); */
+			background-image: url("../../images/Hearing Colors.jpg");
+			background-size: contain;
+			background-position: bottom, center;
+			background-attachment: fixed, fixed;
+			background-repeat: no-repeat;
+		margin-bottom: -6.5em;
 		}
 
 	}
@@ -3700,7 +3709,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style3 {
-			background-color: #3d4051;
+			background-color: #513d3d;
 		}
 
 			.wrapper.style3:before, .wrapper.style3:after {
@@ -3732,7 +3741,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style5 {
-			background-color: #4d5060;
+			background-color: #1aff00;
 		}
 
 			.wrapper.style5:before, .wrapper.style5:after {
@@ -4068,9 +4077,12 @@ input, select, textarea {
 
 		#footer {
 			background-color: #000000;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg");
-			background-size: cover;
-			background-position: center, center;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg"); */
+			background-image: url("../../images/Hearing Colors.jpg");
+			background-size: contain;
+			background-position: bottom, center;
+			background-attachment: fixed, fixed;
+			background-repeat: no-repeat;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
