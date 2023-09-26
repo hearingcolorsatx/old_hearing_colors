@@ -1,1 +1,273 @@
-hello world
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HEARING COLORS LLC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<script>
+			// Function to generate a random number between min and max (inclusive)
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+	
+			// Define an array of images with their properties
+			const images = [
+				{
+					namePattern: "staring into an astronomical reflection",
+					maxImageNumber: 8,
+				},
+				{
+					namePattern: "searching for some kind of deeper connection",
+					maxImageNumber: 6,
+				},
+				{
+					namePattern: "trying to find a way to escape",
+					maxImageNumber: 5,
+				},
+				{
+					namePattern: "intelligent design",
+					maxImageNumber: 4,
+				},
+				{
+					namePattern: "genetically engineered",
+					maxImageNumber: 4,
+				},
+			];
+	
+
+			// Variable to store the previously selected image index
+			let previousImageIndex = null;
+
+			// Randomly select and set the image source for a specific image
+			function setRandomImageSource(imageElement, imageObject) {
+				let randomImageIndex;
+				do {
+					randomImageIndex = getRandomInt(0, imageObject.maxImageNumber - 1);
+				} while (randomImageIndex === previousImageIndex);
+				
+				// Update the previously selected image index
+				previousImageIndex = randomImageIndex;
+				
+				const randomImageNumber = randomImageIndex + 1;
+				imageElement.src = `images/${imageObject.namePattern} ${randomImageNumber}.png`;
+			}
+	
+			// Call the setRandomImageSource function for all images when the page loads
+			window.addEventListener("load", () => {
+				setRandomImageSource(document.getElementById("randomImage1"), images[0]);
+				setRandomImageSource(document.getElementById("randomImage2"), images[1]);
+				setRandomImageSource(document.getElementById("randomImage3"), images[2]);
+				// Randomly choose between 3 (images[3]) and 4 (images[4])
+				const randomIndex = getRandomInt(3, 4);
+				setRandomImageSource(document.getElementById("randomImage4"), images[randomIndex]);
+			});
+	
+
+		</script>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html" ><img src="images/hearing_colors_text_logo_3_half_speed.gif" /></a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">MilkDrop</a></li>
+								<li><a href="about.html">About</a></li>
+<!--
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li>
+-->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+<!--
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>This is Solid State</h2>
+-->
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<!-- <a href="#" class="image"><img src="./images/hctx.gif" alt="" /></a> -->
+									<div class="content">
+										<h2 class="major">WHATEVER YOU IMAGINE, MAKE IT HAPPEN</h2>
+										<p>Hearing Colors is an independent record label in Austin, TX.</p>
+										<a href="#" class="special">Read More</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="./images/td-text-blue.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Tim Delaney</h2>
+										<p>Tim Delaney is an artist and producer in Austin, TX.</p>
+										<a href="#" class="special">Visit Website</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="./images/neutron-squared-logo-black.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">neutron squared</h2>
+										<p>neutron squared is an artist from Austin, TX</p>
+										<a href="#" class="special">Visit Website</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">LOOKING TO THE 
+										<br/>STARS FOR 
+										<br/>DIRECTION</h2>
+									<p>HEARING COLORS</p>
+									<section class="features">
+										<article class="sar">
+											<a href="#" class="image"><img id="randomImage1" src="" alt="" /></a>
+											<h3 class="major">Staring into an astronomical reflection</h3>
+											<p>From inner space to outer space, it can get confusing when you're trying to find your place</p>
+											<a href="#" class="special">Get confusing</a>
+										</article>
+										<article class="sskdc">
+											<a href="#" class="image"><img id="randomImage2" src="" alt="" /></a>
+											<h3 class="major">Searching for some kind of deeper connection</h3>
+											<p>Between all that is seen and unseen and trying to figure out what it all means</p>
+											<a href="#" class="special">Figure out</a>
+										</article>
+										<article class="igmmap">
+											<a href="#" class="image"><img id="randomImage3" src="" alt="" /></a>
+											<h3 class="major">I've got my mind on astral projection</h3>
+											<p>Trying to find a way to escape from the physical realm into an altered state</p>
+											<a href="#" class="special">Escape</a>
+										</article>
+										<article class="idjns">
+											<a href="#" class="image"><img id="randomImage4" src="" alt="" /></a>
+											<h3 class="major">Intelligent design is just natural selection</h3>
+											<p>Genetically engineered to be controlled by my own fears</p>
+											<a href="#" class="special">Be controlled</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+					<script>
+						// Add click event listeners to each image element
+						document.getElementById("randomImage1").addEventListener("click", () => {
+							event.preventDefault(); // Prevent the default anchor behavior
+							setRandomImageSource(document.getElementById("randomImage1"), images[0]);
+						});
+				
+						document.getElementById("randomImage2").addEventListener("click", () => {
+							event.preventDefault(); // Prevent the default anchor behavior
+							setRandomImageSource(document.getElementById("randomImage2"), images[1]);
+						});
+				
+						document.getElementById("randomImage3").addEventListener("click", () => {
+							event.preventDefault(); // Prevent the default anchor behavior
+							setRandomImageSource(document.getElementById("randomImage3"), images[2]);
+						});
+				
+						document.getElementById("randomImage4").addEventListener("click", () => {
+							event.preventDefault(); // Prevent the default anchor behavior
+							// Randomly select either images[3] or images[4]
+							const selectedImageObject = Math.random() < 0.5 ? images[3] : images[4];
+							setRandomImageSource(document.getElementById("randomImage4"), selectedImageObject);
+						});
+					</script>
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Drop us a line!</h2>
+							<p>Send us a message using the form below to email us directly or you can send us snail mail!</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Hearing Colors LLC<br />
+									PO Box 29265<br />
+									Austin, TX 78755
+								</li>
+								<!-- <li class="icon solid fa-phone">(000) 000-0000</li>-->
+								<!-- <li class="icon solid fa-envelope"><a href="#">your_email@gmail.com ONLY IF YOU WANT!</a></li> -->
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2023 Hearing Colors LLC. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
