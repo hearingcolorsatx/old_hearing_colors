@@ -104,7 +104,7 @@ input, select, textarea {
 		background-image: url("../../images/Hearing Colors.jpg");
 		background-size: contain;
 		background-position: bottom, center;
-		background-attachment: fixed, fixed;
+		background-attachment: scroll, scroll;
 		background-repeat: no-repeat;
 	}
 
