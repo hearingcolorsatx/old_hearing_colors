@@ -3011,22 +3011,22 @@ input, select, textarea {
 		}
 
 			.features article.sar {
-				background: linear-gradient(to left, #ff9900, #ffcc00);
-				/* Other CSS properties for the article element */
-			}
-		
-			.features article.sskdc {
-				background: linear-gradient(to left, #d75c30, #ff9900);
-				/* Other CSS properties for the article element */
-			}
-		
-			.features article.igmmap {
 				background: linear-gradient(to left, #3366ff, #0096ff);
 				/* Other CSS properties for the article element */
 			}
 		
-			.features article.idjns {
+			.features article.sskdc {
 				background: linear-gradient(to left, #993366, #3366ff);
+				/* Other CSS properties for the article element */
+			}
+		
+			.features article.igmmap {
+				background: linear-gradient(to left, #ff9900, #ffcc00);
+				/* Other CSS properties for the article element */
+			}
+		
+			.features article.idjns {
+				background: linear-gradient(to left, #d75c30, #ff9900);
 				/* Other CSS properties for the article element */
 			}
 		
@@ -3112,7 +3112,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			border-bottom: 0;
-			font-size: 0.8em;
+			/* font-size: 2em; */
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
@@ -3121,10 +3121,22 @@ input, select, textarea {
 			#header h1 a {
 				border: 0;
 			}
-				#header h1 a img {
-					height: 4.5em;
-					position: center;
+			
+			#header h1 a img {
+				max-width: 50%;
+				height: 3.5em;
+				display: block;
+			}
+			
+			@media (max-width: 768px) {
+				#header h1 {
+					font-size: 1.5em;
 				}
+			
+				#header h1 a img {
+					max-width: 80%;
+				}
+			}
 
 		#header nav {
 			font-family: Raleway, Helvetica, sans-serif;
@@ -3580,6 +3592,8 @@ input, select, textarea {
 		#wrapper > header .inner {
 			margin: 0 auto;
 			width: 55em;
+			background-color: #000000;
+			opacity: 95%;
 		}
 
 		#wrapper > header h2 {
@@ -3649,11 +3663,22 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background: linear-gradient(to left, #d75c30, black);
-		/* background-color: #d75c30; */
+		background: linear-gradient(to right, #d75c30, #ff9900, #ffcc00, #008000, #3366ff, #0096ff, #993366, #d75c30);
+		background-size: 200% 100%;
 		margin: 6.5em 0;
 		position: relative;
+		animation: gradientSway 30s linear infinite alternate;
 	}
+	
+	@keyframes gradientSway {
+		0%, 100% {
+			background-position: 50% 0;
+		}
+		50% {
+			background-position: -100% 0;
+		}
+	}
+
 		
 		.wrapper:before {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'%3E%3Cstop offset='33%' style='stop-color:%23d75c30%3B;stop-opacity:1' /%3E%3Cstop offset='66%' style='stop-color:%23993366%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E");
@@ -3792,12 +3817,22 @@ input, select, textarea {
 			}
 /* .wrapper.spotlight corresponds to section 1 under the wrapper */
 		.wrapper.spotlight {
-			/* background-color: #ff9900; */
-			background: linear-gradient(to left, #ff9900, black);
+			background: linear-gradient(to right, #d75c30, #ff9900, #d75c30, #ffcc00, #d75c30);
+			background-size: 200% 100%;
+			animation: gradientSway 30s linear infinite alternate;
+		}
+		
+		@keyframes gradientSway {
+			0%, 100% {
+				background-position: 50% 0;
+			}
+			50% {
+				background-position: -100% 0;
+			}
 		}
 
 			.wrapper.spotlight:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'%3E%3Cstop offset='50%' style='stop-color:%23d75c30%3B;stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:%23ff9900%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'%3E%3Cstop offset='50%' style='stop-color:%23d75c30%3B;stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:%23d75c30%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E");
 				/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23d75c30%3B' /%3E%3C/svg%3E"); */
 				box-shadow: inset 0 -1px 0 0 #d75c30, 0 1px 0 0 #d75c30;
 			}
@@ -3854,13 +3889,22 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				/* background-color: #3366ff; */
-				background: linear-gradient(to left, #008000, black);
-				
+				background: linear-gradient(to right, #008000, #ffcc00,  #008000, #3366ff, #008000);
+				background-size: 200% 100%;
+				animation: gradientSway 30s linear infinite alternate;
+			}
+			
+			@keyframes gradientSway {
+				0%, 100% {
+					background-position: -50% 0;
+				}
+				50% {
+					background-position: 100% 0;
+				}
 			}
 
 				.wrapper.spotlight.style2:before {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'%3E%3Cstop offset='33%' style='stop-color:%23008000%3B;stop-opacity:1' /%3E%3Cstop offset='66%' style='stop-color:%23ffcc00%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='75%' y2='0%'%3E%3Cstop offset='33%' style='stop-color:%23008000%3B;stop-opacity:1' /%3E%3Cstop offset='66%' style='stop-color:%23ffcc00%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E");
 					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23008000%3B' /%3E%3C/svg%3E"); */
 					box-shadow: inset 0 -1px 0 0 #ffcc00, 0 1px 0 0 #ffcc00;
 				}
@@ -3873,8 +3917,21 @@ input, select, textarea {
 				
 				.wrapper.spotlight.style3 {
 					/* background-color: #d75c30; */
-					background: linear-gradient(to left, #0096ff, black);
+					background: linear-gradient(to left, #3366ff, #993366,  #3366ff, #d75c30, #3366ff);
+					background-size: 200% 100%;
+					animation: gradientSway 30s linear infinite alternate;
 				}
+				
+				@keyframes gradientSway {
+					0%, 100% {
+						background-position: -50% 0;
+					}
+					50% {
+						background-position: 100% 0;
+					}
+				}
+	
+	
 				
 				.wrapper.spotlight.style3:before {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'%3E%3Cstop offset='33%' style='stop-color:%233366ff%3B;stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:%230096ff%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E");
@@ -3890,6 +3947,17 @@ input, select, textarea {
 
 			.wrapper.spotlight.style4 {
 				background-color: #39477c;
+				background-size: 200% 100%;
+				animation: gradientSway 30s linear infinite alternate; /* Use "alternate" for back and forth */
+			}
+			
+			@keyframes gradientSway {
+				0% {
+					background-position: 200% 0;
+				}
+				100% {
+					background-position: -100% 0;
+				}
 			}
 
 				.wrapper.spotlight.style4:before, .wrapper.spotlight.style4:after {
