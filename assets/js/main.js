@@ -4,48 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/// Background Gradient Cycler
-var gradients = [
-	['#9eb5d7', '#242424'],
-	['#efe2ae', '#a8acc9'],
-	['#6f7554', '#eee1ad']
-  ]
-  var gradientsRev = gradients.reverse()
-  var gradientCover = document.querySelector('.wrapper.spotlight');
-  for (var g = 0; g < gradientsRev.length; g++) {
-	var gradEl = document.createElement('div')
-	gradEl.className = 'gradient'
-	gradEl.style.background = `linear-gradient(${gradientsRev[g][0]}, ${gradientsRev[g][1]})`;
-	gradientCover.appendChild(gradEl)
-  }
-  var gradientEls = document.querySelectorAll('#gradientCover .gradient')
-  
-  function gradientCycler() {
-	function gradeFade(i, opDest) {
-	  var fadeDur = 20000
-	  $(gradientEls[i]).animate({
-		'opacity': opDest
-	  }, {
-		duration: fadeDur,
-		complete: function() {
-		  if (parseInt(i) > 1) {
-			if (parseInt(opDest) === 0) gradeFade(i - 1, 0)
-			else gradFadeStart()
-		  } else {
-			gradeFade(gradientEls.length - 1, 1)
-		  }
-		}
-	  })
-	}
-	var gradFadeStart = function() {
-	  $('.gradient').css('opacity', 1);
-	  gradeFade(gradientEls.length - 1, 0)
-	}
-	gradFadeStart()
-  }
-  gradientCycler()
-
-
 // function changeGradientColor() {
 //     const spotlight = document.querySelector('.wrapper.spotlight');
 // 	spotlight.style.setProperty('--gradient-colors', 'linear-gradient(to right, #d75c30, #ff9900, #d75c30)');
