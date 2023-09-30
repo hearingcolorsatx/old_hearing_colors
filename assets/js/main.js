@@ -4,23 +4,85 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-// Array of possible colors
+/// Background Gradient Cycler
+var gradients = [
+	['#9eb5d7', '#242424'],
+	['#efe2ae', '#a8acc9'],
+	['#6f7554', '#eee1ad']
+  ]
+  var gradientsRev = gradients.reverse()
+  var gradientCover = document.querySelector('.wrapper.spotlight');
+  for (var g = 0; g < gradientsRev.length; g++) {
+	var gradEl = document.createElement('div')
+	gradEl.className = 'gradient'
+	gradEl.style.background = `linear-gradient(${gradientsRev[g][0]}, ${gradientsRev[g][1]})`;
+	gradientCover.appendChild(gradEl)
+  }
+  var gradientEls = document.querySelectorAll('#gradientCover .gradient')
+  
+  function gradientCycler() {
+	function gradeFade(i, opDest) {
+	  var fadeDur = 20000
+	  $(gradientEls[i]).animate({
+		'opacity': opDest
+	  }, {
+		duration: fadeDur,
+		complete: function() {
+		  if (parseInt(i) > 1) {
+			if (parseInt(opDest) === 0) gradeFade(i - 1, 0)
+			else gradFadeStart()
+		  } else {
+			gradeFade(gradientEls.length - 1, 1)
+		  }
+		}
+	  })
+	}
+	var gradFadeStart = function() {
+	  $('.gradient').css('opacity', 1);
+	  gradeFade(gradientEls.length - 1, 0)
+	}
+	gradFadeStart()
+  }
+  gradientCycler()
+
+
+// function changeGradientColor() {
+//     const spotlight = document.querySelector('.wrapper.spotlight');
+// 	spotlight.style.setProperty('--gradient-colors', 'linear-gradient(to right, #d75c30, #ff9900, #d75c30)');
+
+//     if (spotlight) {
+//         const gradientColors = [
+// 			'linear-gradient(to right, #ff9900, #d75c30, #ff9900)',
+//             'linear-gradient(to right, #ffcc00, #ff9900, #ffcc00)',
+//             'linear-gradient(to right, #d75c30, #ffcc00, #d75c30)',
+//         ];
+//         let currentIndex = 0;
+
+//         function updateGradientColor() {
+//             currentIndex = (currentIndex + 1) % gradientColors.length;
+//             spotlight.style.setProperty('--gradient-colors', gradientColors[currentIndex]);
+//         }
+
+//         setInterval(updateGradientColor, 15000); // Change color every 5 seconds
+//     }
+// }
+
+// changeGradientColor();
+
+// Random color picker for buttons and form fields
 const colors = ['d75c30', 'ff9900', 'ffcc00', '008000', '3366ff', '0096ff', '993366'];
 
-// Variable to store the previously selected color
 let previousColor = null;
 
-// Function to generate a random color from the array that is different from the previous color
 function getRandomColor() {
     let randomIndex;
     do {
         randomIndex = Math.floor(Math.random() * colors.length);
-    } while (colors[randomIndex] === previousColor); // Keep generating until it's different
+    } while (colors[randomIndex] === previousColor);
     previousColor = colors[randomIndex];
     return colors[randomIndex];
 }
 
-// Add an event listener for hover on the links
 const links = document.querySelectorAll('#menu .links li a');
 links.forEach(link => {
     link.addEventListener('mouseover', () => {
@@ -29,23 +91,55 @@ links.forEach(link => {
     });
 
     link.addEventListener('mouseout', () => {
-        // Reset the background color on mouseout
         link.style.backgroundColor = '';
     });
 });
 
-// Add an event listener for hover on the button
+// Assign elements to variables to act on
 const button = document.querySelector('.button');
+const sendMessageButton = document.querySelector('input[type="submit"][value="Send Message"]');
+const nameField = document.querySelector('input[type="text"][id="name"]');
+const emailField = document.querySelector('input[type="email"][id="email"]');
+const messageField = document.querySelector('textarea[id="message"]');
 
-button.addEventListener('mouseover', () => {
-    const randomColor = getRandomColor();
-    button.style.backgroundColor = `#${randomColor}`;
-});
+// For the buttons
+function addHoverEffect(element) {
+    if (element) {
+        element.addEventListener('mouseover', () => {
+            const randomColor = getRandomColor();
+            element.style.backgroundColor = `#${randomColor}`;
+        });
 
-button.addEventListener('mouseout', () => {
-    // Reset the background color on mouseout
-    button.style.backgroundColor = '';
-});
+        element.addEventListener('mouseout', () => {
+            element.style.backgroundColor = '';
+        });
+    } else {
+		console.warn(element, 'not found on this page.');
+	}
+}
+
+addHoverEffect(button);
+addHoverEffect(sendMessageButton);
+
+// For the form fields
+function addFocusEffect(element) {
+    if (element) {
+        element.addEventListener('focus', () => {
+            const randomColor = getRandomColor();
+            element.style.backgroundColor = `#${randomColor}`;
+        });
+
+        element.addEventListener('blur', () => {
+            element.style.backgroundColor = '';
+        });
+    } else {
+        console.warn(element, 'not found on this page.');
+    }
+}
+
+addFocusEffect(nameField);
+addFocusEffect(emailField);
+addFocusEffect(messageField);
 
 (function($) {
 
