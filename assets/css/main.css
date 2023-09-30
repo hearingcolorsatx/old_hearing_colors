@@ -3570,6 +3570,13 @@ input, select, textarea {
 
 			#banner {
 				padding: 12em 3em 12.375em 3em ;
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+
 				margin-bottom: -4.75em;
 			}
 
@@ -3583,6 +3590,13 @@ input, select, textarea {
 
 			#banner {
 				padding: 5em 2em 4.25em 2em ;
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+
 				margin-bottom: -2.5em;
 			}
 
@@ -3601,7 +3615,68 @@ input, select, textarea {
 				#banner p {
 					font-size: 0.8em;
 				}
+		}
 
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 5em 2em 4.25em 2em ;
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+
+				margin-bottom: -2.5em;
+			}
+
+				#banner .logo {
+					margin: 0 0 1em 0;
+				}
+
+					#banner .logo .icon {
+						font-size: 1.5em;
+					}
+
+				#banner h2 {
+					font-size: 1.5em;
+				}
+
+				#banner p {
+					font-size: 0.8em;
+				}
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#banner {
+				padding: 5em 2em 4.25em 2em ;
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+
+				margin-bottom: -2.5em;
+			}
+
+				#banner .logo {
+					margin: 0 0 1em 0;
+				}
+
+					#banner .logo .icon {
+						font-size: 1.5em;
+					}
+
+				#banner h2 {
+					font-size: 1.5em;
+				}
+
+				#banner p {
+					font-size: 0.8em;
+				}
 		}
 
 		body.is-preload #banner .logo {
