@@ -103,7 +103,7 @@ input, select, textarea {
 		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg"); */
 		background-image: url("../../images/Hearing Colors.jpg");
 		background-size: contain;
-		background-position: bottom, center;
+		background-position: top, center;
 		background-attachment: fixed, fixed;
 		background-repeat: no-repeat;
 	}
