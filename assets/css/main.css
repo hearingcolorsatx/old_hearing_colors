@@ -119,74 +119,74 @@ input, select, textarea {
 		transition: none !important;
 	}
 
-	@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {
 
-		#body {
-			/* padding: 7em 0 8.25em 0 ; */
-			background-color: #000000;
-			background-image:  url("../../images/Hearing Colors.jpg");
-			background-size: contain;
-			background-position: bottom, center;
-			background-attachment: fixed, fixed;
-			background-repeat: no-repeat;
-			/* margin-bottom: -6.5em; */
+			#body {
+				/* padding: 7em 0 8.25em 0 ; */
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+				/* margin-bottom: -6.5em; */
+			}
 		}
-	}
 
-	@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {
 
-		#body {
-			/* padding: 12em 3em 12.375em 3em ; */
-			background-color: #000000;
-			background-image:  url("../../images/Hearing Colors.jpg");
-			background-size: contain;
-			background-position: bottom, center;
-			background-attachment: fixed, fixed;
-			background-repeat: no-repeat;
-			/* margin-bottom: -4.75em; */
+			#body {
+				/* padding: 12em 3em 12.375em 3em ; */
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+				/* margin-bottom: -4.75em; */
+			}
 		}
-	}
 
-	@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {
 
-		#body {
-			/* padding: 5em 2em 4.25em 2em ; */
-			background-color: #000000;
-			background-image:  url("../../images/Hearing Colors.jpg");
-			background-size: contain;
-			background-position: bottom, center;
-			background-attachment: fixed, fixed;
-			background-repeat: no-repeat;
-			/* margin-bottom: -2.5em; */
+			#body {
+				/* padding: 5em 2em 4.25em 2em ; */
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+				/* margin-bottom: -2.5em; */
+			}
 		}
-	}
 
-	@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {
 
-		#body {
-			/* padding: 5em 2em 4.25em 2em ; */
-			background-color: #000000;
-			background-image:  url("../../images/Hearing Colors.jpg");
-			background-size: contain;
-			background-position: bottom, center;
-			background-attachment: fixed, fixed;
-			background-repeat: no-repeat;
-			/* margin-bottom: -2.5em; */
+			#body {
+				/* padding: 5em 2em 4.25em 2em ; */
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+				/* margin-bottom: -2.5em; */
+			}
 		}
-	}
 
-	@media screen and (max-width: 360px) {
+		@media screen and (max-width: 360px) {
 
-		#body {
-			/* padding: 5em 2em 4.25em 2em ; */
-			background-color: #000000;
-			background-image:  url("../../images/Hearing Colors.jpg");
-			background-size: contain;
-			background-position: bottom, center;
-			background-attachment: fixed, fixed;
-			background-repeat: no-repeat;
-			/* margin-bottom: -2.5em; */
-		}
+			#body {
+				/* padding: 5em 2em 4.25em 2em ; */
+				background-color: #000000;
+				background-image:  url("../../images/Hearing Colors.jpg");
+				background-size: contain;
+				background-position: bottom, center;
+				background-attachment: fixed, fixed;
+				background-repeat: no-repeat;
+				/* margin-bottom: -2.5em; */
+			}
 
 /* Type */
 
