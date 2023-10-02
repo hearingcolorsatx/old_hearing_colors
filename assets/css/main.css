@@ -135,12 +135,13 @@ input, select, textarea {
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
 				background-size: contain;
+				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
 				left: 0;
 				right: 0;
 				position: fixed;
-				z-index: -10; 
+				z-index: -10;
 			}
 
 		
@@ -172,6 +173,7 @@ input, select, textarea {
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
 				background-size: contain;
+				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
 				left: 0;
@@ -209,6 +211,7 @@ input, select, textarea {
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
 				background-size: contain;
+				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
 				left: 0;
@@ -245,6 +248,7 @@ input, select, textarea {
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
 				background-size: contain;
+				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
 				left: 0;
@@ -282,6 +286,7 @@ input, select, textarea {
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
 				background-size: contain;
+				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
 				left: 0;
