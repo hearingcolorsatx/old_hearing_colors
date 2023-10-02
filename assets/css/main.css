@@ -119,151 +119,136 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-		@media screen and (max-width: 1280px) {
-			/* body {
-				background-color: #000000;
-				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: contain;
-				background-position: top, center;
-				background-attachment: scroll;
-				background-repeat: no-repeat;
-				z-index: -10;
-			} */
-			html::before {
-				content: ' ';
-				display: block;
-				background-image: url('../../images/Hearing Colors.jpg');
-				background-position: top center; 
-				-webkit-background-size: contain;
-				-moz-background-size: contain;
-				-o-background-size: contain;
-				background-size: contain;
-				background-repeat: no-repeat;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				position: fixed;
-				z-index: -10;
-			}
+	@media screen and (max-width: 1280px) {
+		body {
+			background-color: #000000;
 		}
-		
-		@media screen and (max-width: 980px) {
-			/* body {
-				background-color: #000000;
-				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: auto;
-				background-position: top, center;
-				background-attachment: scroll;
-				background-repeat: no-repeat;
-				z-index: -10;
-			} */
-			html::before {
-				content: ' ';
-				display: block;
-				background-image: url('../../images/Hearing Colors.jpg');
-				background-position: top center; 
-				-webkit-background-size: contain;
-				-moz-background-size: contain;
-				-o-background-size: contain;
-				background-size: contain;
-				background-repeat: no-repeat;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				position: fixed;
-				z-index: -10; 
-			}
+	}
+	
+	@media screen and (max-width: 980px) {
+		body {
+			background-color: #000000;
 		}
-		
-		@media screen and (max-width: 736px) {
-			/* body {
-				background-color: #000000;
-				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: auto;
-				background-position: top, center;
-				background-attachment: scroll;
-				background-repeat: no-repeat;
-				z-index: -10;
-			} */
-			html::before {
-				content: ' ';
-				display: block;
-				background-image: url('../../images/Hearing Colors.jpg');
-				background-position: top center; 
-				-webkit-background-size: contain;
-				-moz-background-size: contain;
-				-o-background-size: contain;
-				background-size: contain;
-				background-repeat: no-repeat;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				position: fixed;
-				z-index: -10; 
-			}
+	}
+	
+	@media screen and (max-width: 736px) {
+		body {
+			background-color: #000000;
 		}
-		
-		@media screen and (max-width: 480px) {
-			/* body {
-				background-color: #000000;
-				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: auto;
-				background-position: top, center;
-				background-attachment: scroll;
-				background-repeat: no-repeat;
-				z-index: -10;
-			} */
-			html::before {
-				content: ' ';
-				display: block;
-				background-image: url('../../images/Hearing Colors.jpg');
-				background-position: top center; 
-				background-size: contain;
-				-webkit-background-size: contain;
-				-moz-background-size: contain;
-				-o-background-size: contain;
-				background-size: contain;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				position: fixed;
-				z-index: -10; 
-			}
+	}
+	
+	@media screen and (max-width: 480px) {
+		body {
+			background-color: #000000;
+		}
+	}
+	
+	@media screen and (max-width: 360px) {
+		body {
+			background-color: #000000;
+		}
+	}
 
+	@media screen and (max-width: 1280px) {
+		html::before {
+			content: ' ';
+			display: block;
+			background-image: url('../../images/Hearing Colors.jpg');
+			background-position: top center; 
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: fixed;
+			z-index: -10;
 		}
-		
-		@media screen and (max-width: 360px) {
-			/* body {
-				background-color: #000000;
-				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: auto;
-				background-position: top, center;
-				background-attachment: scroll;
-				background-repeat: no-repeat;
-				z-index: -10;
-			} */
-			html::before {
-				content: ' ';
-				display: block;
-				background-image: url('../../images/Hearing Colors.jpg');
-				background-position: top center; 
-				-webkit-background-size: contain;
-				-moz-background-size: contain;
-				-o-background-size: contain;
-				background-size: contain;
-				background-repeat: no-repeat;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				position: fixed;
-				z-index: -10; 
-			}
+	}
+	
+	@media screen and (max-width: 980px) {
+		html::before {
+			content: ' ';
+			display: block;
+			background-image: url('../../images/Hearing Colors.jpg');
+			background-position: top center; 
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: fixed;
+			z-index: -10; 
 		}
+	}
+	
+	@media screen and (max-width: 736px) {
+		html::before {
+			content: ' ';
+			display: block;
+			background-image: url('../../images/Hearing Colors.jpg');
+			background-position: top center; 
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: fixed;
+			z-index: -10; 
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
+		html::before {
+			content: ' ';
+			display: block;
+			background-image: url('../../images/Hearing Colors.jpg');
+			background-position: top center; 
+			background-size: contain;
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: fixed;
+			z-index: -10; 
+		}
+
+	}
+	
+	@media screen and (max-width: 360px) {
+		html::before {
+			content: ' ';
+			display: block;
+			background-image: url('../../images/Hearing Colors.jpg');
+			background-position: top center; 
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: fixed;
+			z-index: -10; 
+		}
+	}
 
 /* Type */
 
