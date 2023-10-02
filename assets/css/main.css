@@ -101,11 +101,11 @@ input, select, textarea {
 	body {
 		background-color: #000000;
 		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg"); */
-		background-image: url("../../images/Hearing Colors.jpg");
-		background-size: contain;
-		background-position: bottom, center;
-		background-attachment: fixed, fixed;
-		background-repeat: no-repeat;
+		/* background-image: url("../../images/Hearing Colors.jpg"); */
+		/* background-size: contain; */
+		/* background-position: bottom, center;
+		background-attachment: fixed, fixed; */
+		/* background-repeat: no-repeat; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
