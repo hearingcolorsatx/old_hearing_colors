@@ -134,8 +134,7 @@ input, select, textarea {
 				display: block;
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
-				/* background-size: cover; */
-				background-size: cover;
+				background-size: auto;
 				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
@@ -150,7 +149,7 @@ input, select, textarea {
 			/* body {
 				background-color: #000000;
 				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: cover;
+				background-size: auto;
 				background-position: top, center;
 				background-attachment: scroll;
 				background-repeat: no-repeat;
@@ -161,7 +160,7 @@ input, select, textarea {
 				display: block;
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
-				background-size: cover;
+				background-size: auto;
 				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
@@ -176,7 +175,7 @@ input, select, textarea {
 			/* body {
 				background-color: #000000;
 				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: cover;
+				background-size: auto;
 				background-position: top, center;
 				background-attachment: scroll;
 				background-repeat: no-repeat;
@@ -187,7 +186,7 @@ input, select, textarea {
 				display: block;
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
-				background-size: cover;
+				background-size: auto;
 				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
@@ -202,7 +201,7 @@ input, select, textarea {
 			/* body {
 				background-color: #000000;
 				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: cover;
+				background-size: auto;
 				background-position: top, center;
 				background-attachment: scroll;
 				background-repeat: no-repeat;
@@ -213,7 +212,7 @@ input, select, textarea {
 				display: block;
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
-				background-size: cover;
+				background-size: auto;
 				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
@@ -229,7 +228,7 @@ input, select, textarea {
 			/* body {
 				background-color: #000000;
 				background-image: url("../../images/Hearing Colors.jpg");
-				background-size: cover;
+				background-size: auto;
 				background-position: top, center;
 				background-attachment: scroll;
 				background-repeat: no-repeat;
@@ -240,7 +239,7 @@ input, select, textarea {
 				display: block;
 				background-image: url('../../images/Hearing Colors.jpg');
 				background-position: top center; 
-				background-size: cover;
+				background-size: auto;
 				background-repeat: no-repeat;
 				top: 0;
 				bottom: 0;
