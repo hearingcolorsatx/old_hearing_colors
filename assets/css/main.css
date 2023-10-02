@@ -126,10 +126,15 @@ input, select, textarea {
 				background-image: url("../../images/Hearing Colors.jpg");
 				background-size: contain;
 				background-position: top, center;
+				background-position-y: 73%;
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 			}
-		
+
+			body {
+				background-attachment: scroll;
+				}
+
 				body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 					-moz-animation: none !important;
 					-webkit-animation: none !important;
@@ -149,10 +154,15 @@ input, select, textarea {
 				background-image: url("../../images/Hearing Colors.jpg");
 				background-size: contain;
 				background-position: top, center;
+				background-position-y: 73%;
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 			}
-		
+
+			body {
+				background-attachment: scroll;
+				}
+
 				body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 					-moz-animation: none !important;
 					-webkit-animation: none !important;
@@ -172,10 +182,15 @@ input, select, textarea {
 				background-image: url("../../images/Hearing Colors.jpg");
 				background-size: contain;
 				background-position: top, center;
+				background-position-y: 73%;
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 			}
-		
+
+			body {
+				background-attachment: scroll;
+			}
+
 				body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 					-moz-animation: none !important;
 					-webkit-animation: none !important;
@@ -195,10 +210,15 @@ input, select, textarea {
 				background-image: url("../../images/Hearing Colors.jpg");
 				background-size: contain;
 				background-position: top, center;
+				background-position-y: 73%;
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 			}
-		
+
+			body {
+				background-attachment: scroll;
+			}
+
 				body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 					-moz-animation: none !important;
 					-webkit-animation: none !important;
@@ -218,10 +238,15 @@ input, select, textarea {
 				background-image: url("../../images/Hearing Colors.jpg");
 				background-size: contain;
 				background-position: top, center;
+				background-position-y: 73%;
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 			}
-		
+
+			body {
+				background-attachment: scroll;
+			}
+
 				body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 					-moz-animation: none !important;
 					-webkit-animation: none !important;
