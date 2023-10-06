@@ -79,7 +79,7 @@ input, select, textarea {
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		-ms-overflow-style: fixed;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -206,11 +206,11 @@ input, select, textarea {
 	body {
 		background-color: #000000;
 		/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/Hearing Colors.jpg"); */
-		/* background-image: url("../../images/Hearing Colors.jpg"); */
-		/* background-size: contain; */
-		/* background-position: bottom, center;
-		background-attachment: fixed, fixed; */
-		/* background-repeat: no-repeat; */
+		background-image: url("../../images/Hearing Colors.jpg");
+		background-size: contain;
+		background-position: bottom, center;
+		background-attachment: fixed, fixed;
+		background-repeat: no-repeat;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3871,7 +3871,8 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background: linear-gradient(to right, #d75c30, #ff9900, #ffcc00, #008000, #3366ff, #0096ff, #993366, #d75c30);
+		/* background: conic-gradient(90deg, #d75c30, #ff9900, #ffcc00, #008000, #3366ff, #0096ff, #993366, #d75c30); */
+		background: linear-gradient(90deg, #d75c30, #ff9900, #ffcc00, #008000, #3366ff, #0096ff, #993366, #d75c30);
 		background-size: 200% 100%;
 		margin: 6.5em 0;
 		position: relative;
@@ -4025,6 +4026,14 @@ input, select, textarea {
 			}
 /* .wrapper.spotlight corresponds to section 1 under the wrapper */
 		.wrapper.spotlight {
+			background: '';
+			/* background-size: 200% 100%; */
+			/* animation: gradientSway 30s linear infinite alternate; */
+		}
+		
+
+
+		/* .wrapper.spotlight {
 			background: linear-gradient(to right, #d75c30, #ff9900, #d75c30, #ffcc00, #d75c30);
 			background-size: 200% 100%;
 			animation: gradientSway 30s linear infinite alternate;
@@ -4032,13 +4041,13 @@ input, select, textarea {
 		
 		@keyframes gradientSway {
 			0%, 100% {
-				background-position: 50% 0;
+				background-position: -50% 0;
 			}
 			50% {
-				background-position: -100% 0;
+				background-position: 100% 0;
 			}
 		}
-
+ */
 			.wrapper.spotlight:before {
 				/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='0%' y2='0%'%3E%3Cstop offset='100%' style='stop-color:%23d75c30%3B;stop-opacity:1' /%3E%3Cstop offset='100%' style='stop-color:%23d75c30%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E"); */
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23d75c30%3B' /%3E%3C/svg%3E");
@@ -4147,7 +4156,7 @@ input, select, textarea {
 				
 				.wrapper.spotlight.style3:after {
 					/* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%' y1='0%' x2='100%' y2='0%'%3E%3Cstop offset='33%' style='stop-color:%233366ff%3B;stop-opacity:1' /%3E%3Cstop offset='66%' style='stop-color:%23008000%3B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='0,100 100,0 100,100' fill='url(%23grad3)' /%3E%3C/svg%3E"); */
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%230096ff%3B' /%3E%3C/svg%3E"); */
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%230096ff%3B' /%3E%3C/svg%3E");
 					box-shadow: inset 0 -1px 0 0 #0096ff, 0 1px 0 0 #0096ff;
 				}
 

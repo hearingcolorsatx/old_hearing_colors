@@ -102,7 +102,99 @@ addFocusEffect(messageField);
 (function($) {
 
 	// User added code for experimentation
+
+	function createGradientHandler(element, colors) {
+		let isHovering = false;
+		let gradientAngle = 90;
 	
+		function defaultGradientRotation() {
+			gradientAngle += -0.15; // Adjust the rotation speed as needed
+			if (!isHovering) {
+				const conicGradient = `conic-gradient(from ${gradientAngle}deg at -50% 50%, ${colors.join(", ")})`;
+				element.style.background = conicGradient; // Set the conic gradient
+			}
+			requestAnimationFrame(defaultGradientRotation);
+		}
+
+		function hoverGradient(event) {
+			if(isHovering) {
+				const windowWidth = window.innerWidth;
+				const windowHeight = window.innerHeight;
+				
+				const mouseXpercentage = (event.pageX / windowWidth) * 100;
+				const mouseYpercentage = (event.pageY / windowHeight) * 100;
+				const conicGradient = `conic-gradient(from ${gradientAngle}deg at ${mouseXpercentage}% ${mouseYpercentage}%, ${colors.join(", ")})`;
+				element.style.background = conicGradient;
+			}
+			requestAnimationFrame(hoverGradient);
+		}
+	
+		element.addEventListener('mouseenter', () => {
+			isHovering = true;
+		});
+	
+		element.addEventListener('mousemove', (event) => {
+			if (isHovering) {
+				hoverGradient(event);
+			}
+		});
+	
+		element.addEventListener('mouseleave', () => {
+			isHovering = false;
+		});
+	
+		defaultGradientRotation(); // Start the default behavior
+	}
+	
+	const wrapper = document.querySelector('.wrapper.alt.style1');
+	createGradientHandler(wrapper, ['#d75c30', '#ff9900', '#ffcc00', '#008000', '#3366ff', '#0096ff', '#993366', '#d75c30']);
+	
+	const spotlight = document.querySelector('.wrapper.spotlight');
+	createGradientHandler(spotlight, ['#d75c30', '#ff9900', '#ffcc00', '#d75c30']);
+	
+	const spotlight2 = document.querySelector('.wrapper.spotlight.style2');
+	createGradientHandler(spotlight2, ['#3366ff', '#0096ff', '#993366', '#3366ff']);
+	
+	const spotlight3 = document.querySelector('.wrapper.spotlight.style3');
+	createGradientHandler(spotlight3, [' #ff9900, #ffcc00, #008000, #ff9900']);
+	
+
+	// const wrapper = document.querySelector('.wrapper');
+	// let isHovering = false;
+	// let gradientAngle = 90;
+	
+	// function updateGradientRotation() {
+	// 	gradientAngle += -0.15; // Adjust the rotation speed as needed
+	// 	if (!isHovering) {
+	// 		const conicGradient = `conic-gradient(from ${gradientAngle}deg at -50% 50%, #d75c30, #ff9900, #ffcc00, #008000, #3366ff, #0096ff, #993366, #d75c30)`;
+	// 		wrapper.style.background = conicGradient; // Set the conic gradient
+	// 	}
+	// 	requestAnimationFrame(updateGradientRotation);
+	// }
+	
+	// wrapper.addEventListener('mouseenter', () => {
+	// 	isHovering = true;
+	// });
+	
+	// wrapper.addEventListener('mousemove', (event) => {
+	// 	if (isHovering) {
+	// 		windowWidth = window.innerWidth;
+	// 		windowHeight = window.innerHeight;
+	
+	// 		mouseXpercentage = (event.pageX / windowWidth) * 100;
+	// 		mouseYpercentage = (event.pageY / windowHeight) * 100;
+	// 		const conicGradient = `conic-gradient(from 90deg at ${mouseXpercentage}% ${mouseYpercentage}%, #d75c30, #ff9900, #ffcc00, #008000, #3366ff, #0096ff, #993366, #d75c30)`;
+	// 		spotlight.style.background = conicGradient;
+	// 	}
+	// });
+	
+	// wrapper.addEventListener('mouseleave', () => {
+	// 	isHovering = false;
+	// });
+	
+	// updateGradientRotation();
+
+
 	// The following logic randomizes the color of pseudo-elements
 
 	// function getRandomColor() {
